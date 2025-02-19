@@ -3,19 +3,11 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdFavoriteBorder } from "react-icons/md";
 const NavBar = () => {
     const location = useLocation();
-    const navColor = location.pathname==='/'?'text-white':'text-black'
+    const navColor = location.pathname === '/' ? 'text-white' : 'text-black'
     console.log(navColor);
-    
-    const links = <>
-        <li><NavLink className={navColor} to='/'>Home</NavLink></li>
-        <li><NavLink className={navColor} to='/statistics'>Statistics</NavLink></li>
-        <li><NavLink className={navColor} to='/dashboard'>Dashboard</NavLink></li>
-    </>
-    const name = <>
-    
-    </>
+
     return (
-        <div className="navbar px-10 lg:px-30 py-16 lg:py-16 relative z-10">
+        <div className="navbar px-10 lg:px-30 pt-14 lg:py-16 relative z-10">
             <div className="navbar-start flex gap-2">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="p-0 btn btn-ghost lg:hidden">
@@ -35,14 +27,18 @@ const NavBar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        {links}
+                        <li><NavLink to='/'>Home</NavLink></li>
+                        <li><NavLink to='/statistics'>Statistics</NavLink></li>
+                        <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
                     </ul>
                 </div>
                 <a className={`btn p-0 btn-ghost text-xl font-bold ${navColor}`} >Gear Shop</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    {links}
+                    <li><NavLink className={navColor} to='/'>Home</NavLink></li>
+                    <li><NavLink className={navColor} to='/statistics'>Statistics</NavLink></li>
+                    <li><NavLink className={navColor} to='/dashboard'>Dashboard</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end flex gap-4">
