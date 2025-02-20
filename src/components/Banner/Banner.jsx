@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div className="absolute top-[30px] left-1/2 w-[96%] -translate-x-1/2 border-[16px] border-[#F6F6F6]">
+        <div className="absolute top-[15px] left-1/2 w-[96%] -translate-x-1/2 border-[16px] border-[#F6F6F6]">
             {/* min-h-screen */}
             <div className="bg-[#9538E2] rounded-lg lg:rounded-2xl">
                 <div className="text-center py-20 lg:py-28 flex flex-col gap-4 lg:gap-8 ">

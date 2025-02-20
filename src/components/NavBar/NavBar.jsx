@@ -7,7 +7,7 @@ const NavBar = () => {
     console.log(navColor);
 
     return (
-        <div className="navbar px-10 lg:px-30 pt-14 lg:py-16 relative z-10">
+        <div className="navbar px-10 lg:px-30 pt-14 lg:py-12 relative z-10">
             <div className="navbar-start flex gap-2">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="p-0 btn btn-ghost lg:hidden">
