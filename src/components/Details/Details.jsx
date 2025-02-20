@@ -21,7 +21,7 @@ const Details = () => {
                 <h1 className="text-3xl font-bold mb-4">Product Details</h1>
                 <p className="text-base max-w-[776px] mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
-            <div className=" flex flex-col lg:flex-row gap-2 lg:gap-10 bg-white mx-4 lg:mx-32 lg:p-8 rounded-xl lg:rounded-3xl mt-[-170px] ">
+            <div className=" flex flex-col lg:flex-row gap-2 lg:gap-10 bg-white mx-4 lg:mx-52 lg:p-8 rounded-xl lg:rounded-3xl mt-[-170px] ">
                 <div className="object-cover w-full lg:w-[40%] max-sm:p-4">
                     <img className="" src={product_image} alt="" />
                 </div>
