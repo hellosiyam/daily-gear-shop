@@ -5,6 +5,8 @@ const AllGadgets = () => {
 
     const [gadgets, setGadgets] = useState([])
 
+    const [selectCtg, setSelectCtg] = useState('all category')
+
     console.log(gadgets);
 
 
@@ -20,11 +22,11 @@ const AllGadgets = () => {
                 <div className="lg:w-[30%]">
                     <div className="bg-white p-6 border border-[#E6E6E7] rounded-2xl">
                         <div className="flex flex-col gap-5">
-                            <button className="text-lg text-[#09080F99] font-bold bg-[#09080F0D] hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full">All Product</button>
-                            <button className="text-lg text-[#09080F99] font-bold bg-[#09080F0D] hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full">Laptops</button>
-                            <button className="text-lg text-[#09080F99] font-bold bg-[#09080F0D] hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full">Phones</button>
-                            <button className="text-lg text-[#09080F99] font-bold bg-[#09080F0D] hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full">Accessories</button>
-                            <button className="text-lg text-[#09080F99] font-bold bg-[#09080F0D] hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full">Smart Watches</button>
+                            <button onClick={() => setSelectCtg('all category')} className={`${selectCtg === 'all category' ? 'bg-[#9538E2] text-white' : 'bg-[#eae9f099]'} hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full font-bold`}>All Product</button>
+                            <button  onClick={() => setSelectCtg('laptop')} className={`${selectCtg === 'laptop' ? 'bg-[#9538E2] text-white' : 'bg-[#eae9f099]'} text-[#09080F99] text-lg hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full font-bold`}>Laptops </button>
+                            <button onClick={() => setSelectCtg('Phones')} className={`${selectCtg === 'Phones' ? 'bg-[#9538E2] text-white' : 'bg-[#eae9f099]'} text-[#09080F99] text-lg hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full font-bold`}>Phones</button>
+                            <button onClick={() => setSelectCtg('accessories')} className={`${selectCtg === 'accessories' ? 'bg-[#9538E2] text-white' : 'bg-[#eae9f099]'} text-[#09080F99] text-lg hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full font-bold`}>Accessories</button>
+                            <button onClick={() => setSelectCtg('smartwatch')} className={`${selectCtg === 'smartwatch' ? 'bg-[#9538E2] text-white' : 'bg-[#eae9f099]'} text-[#09080F99] text-lg hover:bg-[#9538E2] cursor-pointer hover:text-white px-6 py-3.5 rounded-full font-bold`}>Smart Watches</button>
                         </div>
                     </div>
                 </div>

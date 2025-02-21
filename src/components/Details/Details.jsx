@@ -46,7 +46,7 @@ const Details = () => {
                             </ul>
                         </div>
                         <div className="flex flex-col gap-4">
-                            <p className="text-lg font-bold">Rating : <span className="text-xl font-semibold bg-[#F9C004] text-white px-3.5 py-1.5 rounded-full">{rating}</span></p>
+                            <p className="text-lg font-bold">Rating : <span className="text-base font-medium bg-[#F9C004] text-white px-3.5 py-1.5 rounded-full">{rating}</span></p>
                             <div className="text-2xl text-[#F9C004] flex">
                                 <FaStar />
                                 <FaStar />
