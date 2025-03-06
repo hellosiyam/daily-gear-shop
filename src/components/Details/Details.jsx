@@ -3,7 +3,12 @@ import { FaStar } from "react-icons/fa6";
 import { FaStarHalf } from "react-icons/fa6";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
+import { addToStoredCartList, addToStoredWishList } from "../../utlity/addToDb";
+import StateContext from "../../StateContext/StateContext";
+import { useContext } from "react";
 const Details = () => {
+
+    const handelValue = useContext(StateContext)
 
     const { product_id } = useParams()
 
@@ -13,7 +18,15 @@ const Details = () => {
 
     const { product_title, rating, Specification, description, product_image, price, availability } = gadget
 
-    // const stock = availability === true ? 'In Stock text-[#309C08] border border-[#309C08] bg-[#EAF5E6] px-[14px] py-[7px] rounded-full' : 'Out of Stock text-[#FF0000] border border-[#FF0000] bg-[#F4DDDD] '
+    const handelAddToCart = (id) => {
+        addToStoredCartList(id)
+        handelValue()
+    }
+
+    const handelAddToWishList = (id) => {
+        addToStoredWishList(id)
+        handelValue()
+    }
 
     return (
         <div className="">
@@ -56,8 +69,13 @@ const Details = () => {
                             </div>
                         </div>
                         <div className="flex flex-row gap-3">
-                            <button className="flex items-center gap-2 bg-[#9538E2] px-6 py-3 rounded-full text-lg text-white font-medium">Add To Card <MdOutlineShoppingCart /></button>
-                            <button className="p-3 rounded-full text-2xl font-medium border border-[#09080F0D]"><FaRegHeart /></button>
+                            <button
+                                onClick={() => handelAddToCart(product_id)} className="flex items-center gap-2 bg-[#9538E2] px-6 py-3 rounded-full text-lg text-white font-medium cursor-pointer">
+                                Add To Card
+                                <MdOutlineShoppingCart />
+                                
+                            </button>
+                            <button onClick={() => handelAddToWishList(product_id)} className="p-3 rounded-full text-2xl font-medium border border-[#09080F0D] cursor-pointer"><FaRegHeart /></button>
                         </div>
                     </div>
                 </div>

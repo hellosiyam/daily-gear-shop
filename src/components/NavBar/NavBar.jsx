@@ -1,10 +1,19 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdFavoriteBorder } from "react-icons/md";
+import { getAddToCart, getWishList } from "../../utlity/addToDb";
+import { useContext } from "react";
+import StateContext from "../../StateContext/StateContext";
 const NavBar = () => {
     const location = useLocation();
     const navColor = location.pathname === '/' ? 'text-white' : 'text-black'
     console.log(navColor);
+
+    const {cartListCount}=useContext(StateContext)
+    console.log(cartListCount);
+
+    const addToCart = getAddToCart()
+    const addToWishList = getWishList()
 
     return (
         <div className="navbar px-10 lg:px-30 pt-14 lg:py-12 relative z-10">
@@ -32,7 +41,7 @@ const NavBar = () => {
                         <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
                     </ul>
                 </div>
-                <a className={`btn p-0 btn-ghost text-xl font-bold ${navColor}`} >Gear Shop</a>
+                <a className={`btn p-0 btn-ghost text-xl font-bold max-md:text-lg max-md:font-medium ${navColor}`} >Gear Shop</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -41,9 +50,20 @@ const NavBar = () => {
                     <li><NavLink className={navColor} to='/dashboard'>Dashboard</NavLink></li>
                 </ul>
             </div>
-            <div className="navbar-end flex gap-4">
-                <button className="text-2xl p-2 bg-white border-blue-200  border rounded-full"><MdOutlineShoppingCart /></button>
-                <button className="text-2xl p-2 bg-white border-blue-200  border rounded-full"><MdFavoriteBorder /></button>
+            <div className="navbar-end flex gap-4 max-md:gap-2">
+                <div className="flex">
+                    <button className="max-md:text-lg text-2xl p-2 bg-white border-blue-200  border rounded-full"><MdOutlineShoppingCart /></button>
+                    <div>
+                        <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{addToCart.length}</span>
+                    </div>
+                </div>
+                <div className="flex">
+                    <button className="max-md:text-lg text-2xl p-2 bg-white border-blue-200  border rounded-full"><MdFavoriteBorder /></button>
+                    <div>
+                        <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{addToWishList.length}</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

@@ -47,7 +47,7 @@
       "1TB SSD",
       "NVIDIA GeForce RTX 3080"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.7
   },
   {
@@ -203,7 +203,7 @@
     "availability": true,
     "rating": 4.6
   },
-{
+  {
     "product_id": "M1001",
     "product_title": "iPhone 14 Pro Max",
     "product_image": "https://i.ibb.co.com/n9Nk8vS/i-Phone-14-Pro-Max.webp",
@@ -211,12 +211,12 @@
     "price": 1099.99,
     "description": "The latest iPhone 14 Pro Max with A16 Bionic chip, Dynamic Island, and a Pro camera system.",
     "Specification": [
-      "Display : 6.7-inch Super Retina XDR" ,
-      "Processor : A16 Bionic chip" ,
-      "RAM : 6GB" ,
-      "Storage : 128GB / 256GB / 512GB / 1TB" ,
+      "Display : 6.7-inch Super Retina XDR",
+      "Processor : A16 Bionic chip",
+      "RAM : 6GB",
+      "Storage : 128GB / 256GB / 512GB / 1TB",
       "Camera : 48MP + 12MP + 12MP Triple Camera",
-      "Battery :4323mAh, MagSafe Charging" 
+      "Battery :4323mAh, MagSafe Charging"
     ],
     "availability": true,
     "rating": 4.8
@@ -229,12 +229,12 @@
     "price": 1199.99,
     "description": "The Samsung Galaxy S23 Ultra with Snapdragon 8 Gen 2, S Pen, and a powerful 200MP camera.",
     "Specification": [
-      "Display : 6.8-inch Dynamic AMOLED 2X, 120Hz" ,
-      "Processor : Snapdragon 8 Gen 2" ,
-      "RAM : 8GB / 12GB" ,
-      "Storage : 256GB / 512GB / 1TB" ,
-      "Camera : 200MP + 12MP + 10MP + 10MP Quad Camera" ,
-      "Battery : 5000mAh, 45W Fast Charging" 
+      "Display : 6.8-inch Dynamic AMOLED 2X, 120Hz",
+      "Processor : Snapdragon 8 Gen 2",
+      "RAM : 8GB / 12GB",
+      "Storage : 256GB / 512GB / 1TB",
+      "Camera : 200MP + 12MP + 10MP + 10MP Quad Camera",
+      "Battery : 5000mAh, 45W Fast Charging"
     ],
     "availability": true,
     "rating": 4.9
@@ -247,12 +247,12 @@
     "price": 899.99,
     "description": "Google Pixel 7 Pro with Tensor G2 chip, AI-powered photography, and pure Android experience.",
     "Specification": [
-      "Display : 6.7-inch LTPO OLED, 120Hz" ,
-      "Processor : Google Tensor G2" ,
-      "RAM : 12GB" ,
-      "Storage : 128GB / 256GB / 512GB" ,
-      "Camera : 50MP + 48MP + 12MP Triple Camera" ,
-      "Battery : 5000mAh, 30W Fast Charging" 
+      "Display : 6.7-inch LTPO OLED, 120Hz",
+      "Processor : Google Tensor G2",
+      "RAM : 12GB",
+      "Storage : 128GB / 256GB / 512GB",
+      "Camera : 50MP + 48MP + 12MP Triple Camera",
+      "Battery : 5000mAh, 30W Fast Charging"
     ],
     "availability": true,
     "rating": 4.7
@@ -265,12 +265,12 @@
     "price": 849.99,
     "description": "OnePlus 11 5G with Snapdragon 8 Gen 2, Hasselblad cameras, and ultra-fast charging.",
     "Specification": [
-      "Display : 6.7-inch AMOLED, 120Hz" ,
-      "Processor : Snapdragon 8 Gen 2" ,
-      "RAM : 8GB / 16GB" ,
-      "Storage :128GB / 256GB / 512GB" ,
-      "Camera : 50MP + 48MP + 32MP Triple Camera" ,
-      "Battery : 5000mAh, 100W Fast Charging" 
+      "Display : 6.7-inch AMOLED, 120Hz",
+      "Processor : Snapdragon 8 Gen 2",
+      "RAM : 8GB / 16GB",
+      "Storage :128GB / 256GB / 512GB",
+      "Camera : 50MP + 48MP + 32MP Triple Camera",
+      "Battery : 5000mAh, 100W Fast Charging"
     ],
     "availability": true,
     "rating": 4.6
@@ -283,12 +283,12 @@
     "price": 899.99,
     "description": "Xiaomi 13 Pro with Snapdragon 8 Gen 2, Leica camera system, and 120W fast charging.",
     "Specification": [
-      "Display : 6.73-inch LTPO AMOLED, 120Hz" ,
-      "Processor : Snapdragon 8 Gen 2" ,
-      "RAM : 8GB / 12GB" ,
-      "Storage : 128GB / 256GB / 512GB" ,
-      "Camera : 50MP + 50MP + 50MP Leica Triple Camera" ,
-      "Battery : 4820mAh, 120W Fast Charging" 
+      "Display : 6.73-inch LTPO AMOLED, 120Hz",
+      "Processor : Snapdragon 8 Gen 2",
+      "RAM : 8GB / 12GB",
+      "Storage : 128GB / 256GB / 512GB",
+      "Camera : 50MP + 50MP + 50MP Leica Triple Camera",
+      "Battery : 4820mAh, 120W Fast Charging"
     ],
     "availability": true,
     "rating": 4.7
@@ -301,12 +301,12 @@
     "price": 999.99,
     "description": "Asus ROG Phone 7 with Snapdragon 8 Gen 2, AMOLED display, and gaming-specific features.",
     "Specification": [
-      "Display :6.78-inch AMOLED, 165Hz" ,
-      "Processor : Snapdragon 8 Gen 2" ,
-      "RAM : 16GB" ,
-      "Storage : 256GB / 512GB" ,
-      "Camera : 50MP + 13MP + 5MP Triple Camera" ,
-      "Battery : 6000mAh, 65W Fast Charging" 
+      "Display :6.78-inch AMOLED, 165Hz",
+      "Processor : Snapdragon 8 Gen 2",
+      "RAM : 16GB",
+      "Storage : 256GB / 512GB",
+      "Camera : 50MP + 13MP + 5MP Triple Camera",
+      "Battery : 6000mAh, 65W Fast Charging"
     ],
     "availability": true,
     "rating": 4.8
@@ -319,12 +319,12 @@
     "price": 1199.99,
     "description": "Sony Xperia 1 V with a 4K OLED display, Snapdragon 8 Gen 2, and professional-grade camera system.",
     "Specification": [
-      "Display : 6.5-inch 4K OLED, 120Hz" ,
-      "Processor : Snapdragon 8 Gen 2" ,
-      "RAM : 12GB" ,
-      "Storage : 256GB / 512GB" ,
-      "Camera :48MP + 12MP + 12MP Triple Camera" ,
-      "Battery : 5000mAh, 30W Fast Charging" 
+      "Display : 6.5-inch 4K OLED, 120Hz",
+      "Processor : Snapdragon 8 Gen 2",
+      "RAM : 12GB",
+      "Storage : 256GB / 512GB",
+      "Camera :48MP + 12MP + 12MP Triple Camera",
+      "Battery : 5000mAh, 30W Fast Charging"
     ],
     "availability": true,
     "rating": 4.6
@@ -337,12 +337,12 @@
     "price": 799.99,
     "description": "Nothing Phone (2) with a transparent design, Glyph LED interface, and Snapdragon 8+ Gen 1.",
     "Specification": [
-      "Display : 6.7-inch OLED, 120Hz" ,
-      "Processor : Snapdragon 8+ Gen 1" ,
-      "RAM : 8GB / 12GB" ,
-      "Storage : 128GB / 256GB" ,
-      "Camera : 50MP + 50MP Dual Camera" ,
-      "Battery : 4700mAh, 45W Fast Charging" 
+      "Display : 6.7-inch OLED, 120Hz",
+      "Processor : Snapdragon 8+ Gen 1",
+      "RAM : 8GB / 12GB",
+      "Storage : 128GB / 256GB",
+      "Camera : 50MP + 50MP Dual Camera",
+      "Battery : 4700mAh, 45W Fast Charging"
     ],
     "availability": true,
     "rating": 4.5
@@ -355,12 +355,12 @@
     "price": 899.99,
     "description": "Motorola Edge 40 Pro with curved OLED display, 165Hz refresh rate, and 125W fast charging.",
     "Specification": [
-       "Display : 6.67-inch P-OLED, 165Hz" ,
-       "Processor : Snapdragon 8 Gen 2" ,
-       "RAM : 12GB" ,
-       "Storage : 256GB / 512GB" ,
-       "Camera :50MP + 50MP + 12MP Triple Camera" ,
-       "Battery :4600mAh, 125W Fast Charging" 
+      "Display : 6.67-inch P-OLED, 165Hz",
+      "Processor : Snapdragon 8 Gen 2",
+      "RAM : 12GB",
+      "Storage : 256GB / 512GB",
+      "Camera :50MP + 50MP + 12MP Triple Camera",
+      "Battery :4600mAh, 125W Fast Charging"
     ],
     "availability": true,
     "rating": 4.6
@@ -373,11 +373,11 @@
     "price": 799.99,
     "description": "A flagship killer with Snapdragon 8 Gen 2, 100W charging, and Hasselblad cameras.",
     "Specification": [
-      "Display : 6.7-inch AMOLED, 120Hz" ,
-      "Processor : Snapdragon 8 Gen 2" ,
-      "Camera : 50MP + 48MP + 32MP" ,
-      "Battery : 5000mAh, 100W fast charging" ,
-      "OS : Android 13, OxygenOS 13" 
+      "Display : 6.7-inch AMOLED, 120Hz",
+      "Processor : Snapdragon 8 Gen 2",
+      "Camera : 50MP + 48MP + 32MP",
+      "Battery : 5000mAh, 100W fast charging",
+      "OS : Android 13, OxygenOS 13"
     ],
     "availability": true,
     "rating": 4.6
@@ -390,11 +390,11 @@
     "price": 649.99,
     "description": "A high-end phone with a 1-inch camera sensor and Snapdragon 8 Gen 2.",
     "Specification": [
-      "Display : 6.73-inch AMOLED, 120Hz" ,
-      "Processor : Snapdragon 8 Gen 2" ,
-      "Camera : 50MP (1-inch sensor) + 50MP + 50MP" ,
-      "Battery : 4820mAh, 120W fast charging" ,
-      "OS : Android 13, MIUI 14" 
+      "Display : 6.73-inch AMOLED, 120Hz",
+      "Processor : Snapdragon 8 Gen 2",
+      "Camera : 50MP (1-inch sensor) + 50MP + 50MP",
+      "Battery : 4820mAh, 120W fast charging",
+      "OS : Android 13, MIUI 14"
     ],
     "availability": true,
     "rating": 4.8
@@ -407,11 +407,11 @@
     "price": 999.99,
     "description": "The ultimate gaming phone with a 165Hz display and a massive battery.",
     "Specification": [
-      "Display : 6.78-inch AMOLED, 165Hz" ,
-      "Processor : Snapdragon 8+ Gen 1" ,
-      "Camera : 50MP + 13MP + 5MP" ,
-      "Battery : 6000mAh, 65W fast charging" ,
-      "OS : Android 12, ROG UI" 
+      "Display : 6.78-inch AMOLED, 165Hz",
+      "Processor : Snapdragon 8+ Gen 1",
+      "Camera : 50MP + 13MP + 5MP",
+      "Battery : 6000mAh, 65W fast charging",
+      "OS : Android 12, ROG UI"
     ],
     "availability": true,
     "rating": 4.7
@@ -424,12 +424,12 @@
     "price": 429.99,
     "description": "Apple Watch Series 9 with advanced health tracking, S9 chip, and Always-On Retina display.",
     "Specification": [
-      "Display : 1.9-inch Retina OLED" ,
-      "Processor : Apple S9" ,
-      "Storage : 32GB" ,
-      "Battery Life : 18 hours" ,
-      "Water Resistance : 50m" ,
-      "Connectivity : Wi-Fi, Bluetooth, GPS, Cellular" 
+      "Display : 1.9-inch Retina OLED",
+      "Processor : Apple S9",
+      "Storage : 32GB",
+      "Battery Life : 18 hours",
+      "Water Resistance : 50m",
+      "Connectivity : Wi-Fi, Bluetooth, GPS, Cellular"
     ],
     "availability": true,
     "rating": 4.8
@@ -442,12 +442,12 @@
     "price": 449.99,
     "description": "Samsung Galaxy Watch 6 Classic with rotating bezel, Wear OS, and improved battery life.",
     "Specification": [
-      "Display : 1.5-inch Super AMOLED" ,
-      "Processor : Exynos W930" ,
-      "Storage : 16GB" ,
-      "Battery Life : 40 hours" ,
-      "Water Resistance : IP68, 5ATM" ,
-      "Connectivity : Wi-Fi, Bluetooth, GPS, LTE" 
+      "Display : 1.5-inch Super AMOLED",
+      "Processor : Exynos W930",
+      "Storage : 16GB",
+      "Battery Life : 40 hours",
+      "Water Resistance : IP68, 5ATM",
+      "Connectivity : Wi-Fi, Bluetooth, GPS, LTE"
     ],
     "availability": true,
     "rating": 4.7
@@ -460,12 +460,12 @@
     "price": 899.99,
     "description": "Garmin Fenix 7X Pro with rugged design, solar charging, and advanced fitness tracking.",
     "Specification": [
-      "Display : 1.4-inch MIP Solar" ,
-      "Battery Life : 37 days (solar mode)" ,
-      "Water Resistance : 10ATM" ,
-      "GPS : Multi-band GNSS" ,
-      "Sports Modes : Over 30+ activities" ,
-      "Connectivity : Wi-Fi, Bluetooth, ANT+" 
+      "Display : 1.4-inch MIP Solar",
+      "Battery Life : 37 days (solar mode)",
+      "Water Resistance : 10ATM",
+      "GPS : Multi-band GNSS",
+      "Sports Modes : Over 30+ activities",
+      "Connectivity : Wi-Fi, Bluetooth, ANT+"
     ],
     "availability": true,
     "rating": 4.9
@@ -478,12 +478,12 @@
     "price": 349.99,
     "description": "Google Pixel Watch 2 with Fitbit health tracking, Wear OS 4, and all-day battery life.",
     "Specification": [
-      "Display : 1.2-inch AMOLED" ,
-      "Processor :Qualcomm Snapdragon W5" ,
-      "Storage :32GB" ,
-      "Battery Life : 24 hours" ,
-      "Water Resistance :5ATM" ,
-      "Connectivity :Wi-Fi, Bluetooth, GPS, LTE" 
+      "Display : 1.2-inch AMOLED",
+      "Processor :Qualcomm Snapdragon W5",
+      "Storage :32GB",
+      "Battery Life : 24 hours",
+      "Water Resistance :5ATM",
+      "Connectivity :Wi-Fi, Bluetooth, GPS, LTE"
     ],
     "availability": true,
     "rating": 4.6
@@ -496,11 +496,11 @@
     "price": 299.99,
     "description": "Fitbit Sense 2 with ECG, stress tracking, and long battery life.",
     "Specification": [
-      "Display : 1.58-inch AMOLED" ,
-      "Battery Life : 6 days" ,
-      "Water Resistance : 50m" ,
-      "Health Features : ECG, EDA, SpO2" ,
-      "Connectivity : Wi-Fi, Bluetooth, GPS" 
+      "Display : 1.58-inch AMOLED",
+      "Battery Life : 6 days",
+      "Water Resistance : 50m",
+      "Health Features : ECG, EDA, SpO2",
+      "Connectivity : Wi-Fi, Bluetooth, GPS"
     ],
     "availability": true,
     "rating": 4.5
@@ -513,12 +513,12 @@
     "price": 199.99,
     "description": "Amazfit GTR 4 with AMOLED display, dual-band GPS, and long battery life.",
     "Specification": [
-      "Display : 1.43-inch AMOLED" ,
-      "Battery Life : 14 days" ,
-      "Water Resistance : 5ATM" ,
-      "GPS : Dual-band" ,
-      "Sports Modes : Over 150+ activities" ,
-      "Connectivity : Bluetooth, GPS" 
+      "Display : 1.43-inch AMOLED",
+      "Battery Life : 14 days",
+      "Water Resistance : 5ATM",
+      "GPS : Dual-band",
+      "Sports Modes : Over 150+ activities",
+      "Connectivity : Bluetooth, GPS"
     ],
     "availability": true,
     "rating": 4.6
@@ -531,32 +531,14 @@
     "price": 249.99,
     "description": "Huawei Watch GT 4 with premium design, long battery life, and fitness tracking.",
     "Specification": [
-      "Display : 1.43-inch AMOLED" ,
-      "Battery Life : 14 days" ,
-      "Water Resistance : 5ATM" ,
-      "Sports Modes : 100+ activities" ,
-      "Connectivity : Bluetooth, GPS" 
+      "Display : 1.43-inch AMOLED",
+      "Battery Life : 14 days",
+      "Water Resistance : 5ATM",
+      "Sports Modes : 100+ activities",
+      "Connectivity : Bluetooth, GPS"
     ],
     "availability": true,
     "rating": 4.7
-  },
-  {
-    "product_id": "SW3008",
-    "product_title": "TicWatch Pro 5",
-    "product_image": "https://i.ibb.co.com/7tWSj68M/Tic-Watch-Pro-5.png",
-    "category": "Smartwatch",
-    "price": 349.99,
-    "description": "TicWatch Pro 5 with Snapdragon W5+, dual-layer display, and ultra-long battery life.",
-    "Specification": [
-      "Display : 1.43-inch AMOLED + LCD" ,
-      "Processor : Snapdragon W5+" ,
-      "Battery Life : 80 hours" ,
-      "Water Resistance : 5ATM" ,
-      "Health Features : Heart Rate, SpO2, Sleep Tracking" ,
-      "Connectivity : Wi-Fi, Bluetooth, GPS" 
-    ],
-    "availability": true,
-    "rating": 4.6
   },
   {
     "product_id": "SW3008",
@@ -606,7 +588,7 @@
       "Noise Cancellation : Yes",
       "Connectivity : Bluetooth 5.3"
     ],
-    "availability": false,
+    "availability": true,
     "rating": 4.8
   },
   {
@@ -633,7 +615,7 @@
     "price": 399.99,
     "description": "Industry-leading noise-canceling over-ear headphones with 30-hour battery life.",
     "Specification": [
-      "Battery Life : 30 hours", 
+      "Battery Life : 30 hours",
       "Noise Cancellation : Yes",
       "Wireless : Yes",
       "Connectivity : Bluetooth 5.2, AUX"
@@ -683,7 +665,7 @@
       "Ports : USB-C, USB-A",
       "Fast Charging : Yes"
     ],
-    "availability": false,
+    "availability": true,
     "rating": 4.8
   },
   {
@@ -847,7 +829,7 @@
       "Water : Resistance IP55",
       "Connectivity : Bluetooth, AUX"
     ],
-    "availability": false,
+    "availability": true,
     "rating": 4.7
   },
   {
@@ -878,7 +860,7 @@
       "Connectivity : USB, 3.5mm",
       "Microphone : Detachable Noise-Canceling"
     ],
-    "availability": false,
+    "availability": true,
     "rating": 4.7
   },
   {

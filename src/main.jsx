@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import { ToastContainer } from 'react-toastify';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,25 +12,32 @@ import Error from './components/Error/Error.jsx';
 import Home from './components/Home/Home.jsx';
 import Statistics from './components/Statistics/Statistics.jsx';
 import Details from './components/Details/Details.jsx';
+import Dashboard from './components/Dashboard/Dashboard.jsx';
+import { ContextProvider } from './StateContext/StateContext.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement : <Error></Error>,
-    children : [
+    errorElement: <Error></Error>,
+    children: [
       {
-        path : '/',
-        element : <Home></Home>
+        path: '/',
+        element: <Home></Home>
       },
       {
-        path : '/statistics',
-        element : <Statistics></Statistics>
+        path: '/statistics',
+        element: <Statistics></Statistics>
       },
       {
-        path : '/details/:product_id',
-        loader : () => fetch('/gadgets.json'),
-        element : <Details></Details>
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>,
+        loader: () => fetch('/gadgets.json')
+      },
+      {
+        path: '/details/:product_id',
+        loader: () => fetch('/gadgets.json'),
+        element: <Details></Details>
       }
     ]
   },
@@ -37,6 +45,20 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ContextProvider>
+      <RouterProvider router={router} />
+    </ContextProvider>
+    <ToastContainer
+      position="top-right"
+      autoClose={300}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick={false}
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="light"
+    />
   </StrictMode>,
 )
