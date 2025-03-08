@@ -21,7 +21,7 @@ const Modal = () => {
                     <div className="w-full">
                         <form method="dialog">
                             {/* if there is a button in form, it will close the modal */}
-                            <button className="w-full text-xl font-semibold rounded-full bg-[#11000008] p-2.5 hover:bg-[#9538E2] hover:text-white">Close</button>
+                            <button className="cursor-pointer w-full text-xl font-semibold rounded-full bg-[#11000008] p-2.5 hover:bg-[#9538E2] hover:text-white">Close</button>
                         </form>
                     </div>
                 </div>
