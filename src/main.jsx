@@ -49,16 +49,7 @@ createRoot(document.getElementById('root')).render(
       <RouterProvider router={router} />
     </ContextProvider>
     <ToastContainer
-      position="top-right"
-      autoClose={300}
-      hideProgressBar={false}
-      newestOnTop={false}
-      closeOnClick={false}
-      rtl={false}
-      pauseOnFocusLoss
-      draggable
-      pauseOnHover
-      theme="light"
+      autoClose={600}
     />
   </StrictMode>,
 )

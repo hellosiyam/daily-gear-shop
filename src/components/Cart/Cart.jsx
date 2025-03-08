@@ -1,10 +1,20 @@
 import PropTypes from "prop-types";
 import { AiOutlineClose } from "react-icons/ai";
+import { removeStoredList } from "../../utlity/addToDb";
+import { useContext } from "react";
+import StateContext from "../../StateContext/StateContext";
+
 const Cart = ({ gadget }) => {
 
-    const { product_image, product_title, description, price } = gadget
+    const { product_image, product_title, description, price, product_id } = gadget;
+    const {dashboardData,handelValue}=useContext(StateContext)
 
-    
+    const handelRemoveCart = (id) => {
+        removeStoredList(id)
+        dashboardData()
+        handelValue()
+
+    }
 
     return (
         <div className="flex justify-between max-md:flex-col lg:p-8 p-4 bg-white rounded-xl lg:rounded-4xl items-center">
@@ -17,7 +27,7 @@ const Cart = ({ gadget }) => {
                 </div>
             </div>
             <div className="">
-                <p className="border rounded-full border-red-500 p-4 text-red-500"><span className="text-xl "><AiOutlineClose /></span></p>
+                <p onClick={() => handelRemoveCart(product_id)} className="border rounded-full border-red-500 p-4 text-red-500"><span className="text-xl "><AiOutlineClose /></span></p>
             </div>
         </div>
     );

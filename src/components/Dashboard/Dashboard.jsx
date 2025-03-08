@@ -1,41 +1,28 @@
-import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
-import { getAddToCart, getWishList } from "../../utlity/addToDb";
+import { useContext, useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Wish from "../Wish/Wish";
+import StateContext from "../../StateContext/StateContext";
+import { removeAllStoredList } from "../../utlity/addToDb";
+import Modal from "../Modal/Modal";
 
 const Dashboard = () => {
     const [cart, setCart] = useState('cart');
-
-    const [addToCart, setAddToCart] = useState([])
-    const [addToWish, setToWish] = useState([])
-
-    const [totalCost, setTotalCost] = useState(0);
-    const allGadgets = useLoaderData();
+    const { dashboardData, addToCart, addToWish, handelSort, totalCost, handelValue } = useContext(StateContext)
 
     useEffect(() => {
-        const addToCart = getAddToCart();
-        const addToWish = getWishList();
+        dashboardData()
+    }, [])
 
-        const addToCartList = allGadgets.filter(gadget => addToCart.includes(gadget.product_id))
-        const addToWishList = allGadgets.filter(gadget => addToWish.includes(gadget.product_id))
-
-        setAddToCart(addToCartList)
-        setToWish(addToWishList)
-
-        const total = addToCartList.reduce((sum, gadget) => sum + gadget.price, 0);
-        setTotalCost(total);
-    }, [allGadgets])
-
-    const handelSort = () => {
-        // const sorted = [...addToCart].sort((a, b) => a.price - b.price);
-        const sorted = [...addToCart].sort((a, b) => a.price - b.price)
-        setAddToCart(sorted)
+    const handelPerches = () => {
+        document.getElementById('my_modal_5').showModal()
+        removeAllStoredList()
+        dashboardData()
+        handelValue()
     }
-
 
     return (
         <div>
+            <Modal></Modal>
             <div className="bg-[#9538E2] text-white text-center py-8 max-md:px-4">
                 <h1 className="text-3xl font-bold mb-4">Product Details</h1>
                 <div className="flex flex-col items-center gap-8">
@@ -62,7 +49,7 @@ const Dashboard = () => {
                                 Sort by Price
 
                             </button>
-                            <button type="button" className="cursor-pointer text-lg text-white font-semibold px-6 py-2 bg-[#9538E2] rounded-full">
+                            <button onClick={handelPerches} type="button" className="cursor-pointer text-lg text-white font-semibold px-6 py-2 bg-[#9538E2] rounded-full">
                                 Purchase
                             </button>
                         </div>

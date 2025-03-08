@@ -53,12 +53,14 @@ const NavBar = () => {
                         <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{cartListCount.length}</span>
                     </div>
                 </div>
+                <NavLink to='/dashboard'>
                 <div className="flex">
                     <button className="max-md:text-lg text-2xl p-2 bg-white border-blue-200  border rounded-full"><MdFavoriteBorder /></button>
                     <div>
                         <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{wishListCount.length}</span>
                     </div>
                 </div>
+                </NavLink>
 
             </div>
         </div>

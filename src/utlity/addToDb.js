@@ -1,4 +1,4 @@
-import {toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 const getAddToCart = () => {
     const addToCartStr = localStorage.getItem('add-list');
     if (addToCartStr) {
@@ -19,9 +19,25 @@ const addToStoredCartList = (id) => {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem('add-list', storedListStr)
-        toast('add successfully')
+        toast.success('add successfully')
+    }
+};
+
+const removeStoredList = (id) => {
+    const removeList = getAddToCart()
+    if (removeList.includes(id)) {
+        const cardIdFilter=removeList.filter(item => item !== id)
+        console.log(cardIdFilter);
+        const storedCardListStr = JSON.stringify(cardIdFilter)
+        localStorage.setItem('add-list',storedCardListStr)
+        toast.info('remove item')
     }
 }
+
+const removeAllStoredList = () => {
+    localStorage.clear(getAddToCart());
+}
+
 
 // Wish List
 const getWishList = () => {
@@ -29,7 +45,7 @@ const getWishList = () => {
     if (addToWishListStr) {
         const addList = JSON.parse(addToWishListStr);
         return addList;
-        
+
     }
     else {
         return [];
@@ -39,15 +55,27 @@ const getWishList = () => {
 const addToStoredWishList = (id) => {
     const storedList = getWishList();
     if (storedList.includes(id)) {
-        console.log(id, 'Already exists in the list ');
+        toast.error(`Already exists in the list`);
     }
     else {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem('wish-list', storedListStr)
+        toast.success(`successfully added in the list`);
     }
 }
 
-export { addToStoredCartList, addToStoredWishList, getAddToCart, getWishList }
+const removeFormWish = (id) => {
+    const removeWishList = getWishList();
+    if (removeWishList.includes(id)) {
+        const removeFilter = removeWishList.filter(item => item !== id)
+        const removeFilterStr = JSON.stringify(removeFilter)
+        localStorage.setItem('wish-list', removeFilterStr)
+        toast.info('remove item')
+    }
+}
+
+
+export { addToStoredCartList, addToStoredWishList, getAddToCart, getWishList, removeStoredList, removeFormWish, removeAllStoredList }
 
 
