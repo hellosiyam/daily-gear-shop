@@ -18,7 +18,8 @@ import { ContextProvider } from './StateContext/StateContext.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
+    element: <Root>
+    </Root>,
     errorElement: <Error></Error>,
     children: [
       {

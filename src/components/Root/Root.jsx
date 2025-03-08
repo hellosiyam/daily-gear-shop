@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 const Root = () => {
     return (
         <div className="relative bg-[#F6F6F6]">
+            
             <NavBar></NavBar>
             <Outlet></Outlet>
             <Footer></Footer>
