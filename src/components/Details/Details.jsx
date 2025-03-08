@@ -8,7 +8,7 @@ import StateContext from "../../StateContext/StateContext";
 import { useContext } from "react";
 const Details = () => {
 
-    const handelValue = useContext(StateContext)
+const {handelValue} = useContext(StateContext)
 
     const { product_id } = useParams()
 

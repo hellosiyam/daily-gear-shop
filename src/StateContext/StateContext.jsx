@@ -5,8 +5,8 @@ const StateContext = createContext();
 
 export const ContextProvider = ({children}) => {
 
-    const [cartListCount, setCartListCount] = useState([]);
-    const [wishListCount, setWishListCount] = useState([]);
+    const [cartListCount, setCartListCount] = useState(getAddToCart());
+    const [wishListCount, setWishListCount] = useState(getWishList());
 
     const handelValue = () => {
         setCartListCount(getAddToCart())

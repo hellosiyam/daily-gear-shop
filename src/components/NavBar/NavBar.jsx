@@ -1,19 +1,15 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdFavoriteBorder } from "react-icons/md";
-import { getAddToCart, getWishList } from "../../utlity/addToDb";
 import { useContext } from "react";
 import StateContext from "../../StateContext/StateContext";
 const NavBar = () => {
     const location = useLocation();
     const navColor = location.pathname === '/' ? 'text-white' : 'text-black'
-    console.log(navColor);
 
     const {cartListCount}=useContext(StateContext)
-    console.log(cartListCount);
+    const {wishListCount}=useContext(StateContext)
 
-    const addToCart = getAddToCart()
-    const addToWishList = getWishList()
 
     return (
         <div className="navbar px-10 lg:px-30 pt-14 lg:py-12 relative z-10">
@@ -54,13 +50,13 @@ const NavBar = () => {
                 <div className="flex">
                     <button className="max-md:text-lg text-2xl p-2 bg-white border-blue-200  border rounded-full"><MdOutlineShoppingCart /></button>
                     <div>
-                        <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{addToCart.length}</span>
+                        <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{cartListCount.length}</span>
                     </div>
                 </div>
                 <div className="flex">
                     <button className="max-md:text-lg text-2xl p-2 bg-white border-blue-200  border rounded-full"><MdFavoriteBorder /></button>
                     <div>
-                        <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{addToWishList.length}</span>
+                        <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{wishListCount.length}</span>
                     </div>
                 </div>
 
