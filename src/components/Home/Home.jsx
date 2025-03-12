@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import AllGadgets from "../AllGadgets/AllGadgets";
 import Banner from "../Banner/Banner";
 import BannerImg from "../BannerImg/BannerImg";
