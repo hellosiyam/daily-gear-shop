@@ -1,14 +1,14 @@
 import AllGadgets from "../AllGadgets/AllGadgets";
 import Banner from "../Banner/Banner";
 import BannerImg from "../BannerImg/BannerImg";
-import PageTitle from "../PageTitle/PageTitle";
+import Helmete from "../Helmete/Helmete";
 
 
 const Home = () => {
     
     return (
         <div>
-            <PageTitle tittle='Home'></PageTitle>
+            <Helmete tittle='Home'></Helmete>
             <Banner></Banner>
             <BannerImg></BannerImg>
             <AllGadgets></AllGadgets>

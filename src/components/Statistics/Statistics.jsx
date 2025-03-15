@@ -1,9 +1,10 @@
-import PageTitle from "../PageTitle/PageTitle";
+import { Helmet } from "react-helmet";
+
 
 const Statistics = () => {
     return (
         <div>
-            <PageTitle tittle='Statistics'></PageTitle>
+            <Helmet title="Statistics"></Helmet>
             <div className="bg-[#9538E2] text-white text-center py-8 max-md:px-4">
                 <h1 className="text-3xl font-bold mb-4">Statistics</h1>
                 <div className="flex flex-col items-center gap-8">

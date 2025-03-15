@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 
-const PageTitle = ({tittle}) => {
+const Helmete = ({tittle}) => {
     return (
         <div>
             <Helmet>
@@ -11,8 +11,8 @@ const PageTitle = ({tittle}) => {
     );
 };
 
-PageTitle.propTypes = {
+Helmete.propTypes = {
     tittle:PropTypes.element.isRequired
 }
 
-export default PageTitle;
+export default Helmete;

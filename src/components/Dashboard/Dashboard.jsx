@@ -4,7 +4,8 @@ import Wish from "../Wish/Wish";
 import StateContext from "../../StateContext/StateContext";
 import { removeAllStoredList } from "../../utlity/addToDb";
 import Modal from "../Modal/Modal";
-import PageTitle from "../PageTitle/PageTitle";
+import { Helmet } from "react-helmet";
+
 
 const Dashboard = () => {
     const [cart, setCart] = useState('cart');
@@ -23,7 +24,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <PageTitle tittle="Dashboard"></PageTitle>
+            <Helmet title="Dashboard"></Helmet>
             <Modal></Modal>
             <div className="bg-[#9538E2] text-white text-center py-8 max-md:px-4">
                 <h1 className="text-3xl font-bold mb-4">Product Details</h1>

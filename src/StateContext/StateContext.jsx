@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import { getAddToCart, getWishList } from "../utlity/addToDb";
 import { gadgetsData } from "../Data/data";
+import PropTypes from "prop-types";
 
 const StateContext = createContext();
 
