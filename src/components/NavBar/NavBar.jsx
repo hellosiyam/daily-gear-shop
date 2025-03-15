@@ -7,8 +7,8 @@ const NavBar = () => {
     const location = useLocation();
     const navColor = location.pathname === '/' ? 'text-white' : 'text-black'
 
-    const {cartListCount}=useContext(StateContext)
-    const {wishListCount}=useContext(StateContext)
+    const { cartListCount } = useContext(StateContext)
+    const { wishListCount } = useContext(StateContext)
 
 
     return (
@@ -37,7 +37,12 @@ const NavBar = () => {
                         <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
                     </ul>
                 </div>
-                <Link to='/'><a className={`btn p-0 btn-ghost text-xl font-bold max-md:text-lg max-md:font-medium ${navColor}`} >Gear Shop</a></Link>
+                <a href="/"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href="/";
+                    }}
+                    className={`btn p-0 btn-ghost text-xl font-bold max-md:text-lg max-md:font-medium ${navColor}`} >Gear Shop</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -54,12 +59,12 @@ const NavBar = () => {
                     </div>
                 </div>
                 <NavLink to='/dashboard'>
-                <div className="flex">
-                    <button className="max-md:text-lg text-2xl p-2 bg-white border-blue-200  border rounded-full"><MdFavoriteBorder /></button>
-                    <div>
-                        <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{wishListCount.length}</span>
+                    <div className="flex">
+                        <button className="max-md:text-lg text-2xl p-2 bg-white border-blue-200  border rounded-full"><MdFavoriteBorder /></button>
+                        <div>
+                            <span className="-ml-2 bg-white text-center text-red-500 rounded-full max-md:text-[14px] text-base px-2 py-0.5">{wishListCount.length}</span>
+                        </div>
                     </div>
-                </div>
                 </NavLink>
 
             </div>
