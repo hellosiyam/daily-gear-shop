@@ -877,5 +877,24 @@
     ],
     "availability": true,
     "rating": 4.9
-  }
+  },
+  {
+    "product_id": "ACC4021",
+    "product_title": "Rode PodMic",
+    "product_image": "https://i.ibb.co.com/PGPsbcXW/Rode-Pod.webp",
+    "category": "Accessories",
+    "price": 99.99,
+    "description": "Dynamic broadcast-quality microphone optimized for podcasting and streaming.",
+    "Specification": [
+        "Type : Dynamic",
+        "Polar Pattern : Cardioid",
+        "Frequency Response : 20Hz - 20kHz",
+        "Connector : XLR",
+        "Built-in Pop Filter : Yes"
+    ],
+    "availability": true,
+    "rating": 4.7
+}
+
+
 ]
