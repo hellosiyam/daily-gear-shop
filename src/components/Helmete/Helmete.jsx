@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 
-const Helmete = ({tittle}) => {
+const Helmete = ({ tittle }) => {
     return (
         <div>
             <Helmet>
@@ -12,7 +12,7 @@ const Helmete = ({tittle}) => {
 };
 
 Helmete.propTypes = {
-    tittle:PropTypes.element.isRequired
+    tittle: PropTypes.element.isRequired
 }
 
 export default Helmete;

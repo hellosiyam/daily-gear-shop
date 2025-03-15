@@ -5,21 +5,21 @@ import PropTypes from "prop-types";
 
 const StateContext = createContext();
 
-export const ContextProvider = ({children}) => {
+export const ContextProvider = ({ children }) => {
 
     const [cartListCount, setCartListCount] = useState(getAddToCart());
     const [wishListCount, setWishListCount] = useState(getWishList());
-    
+
     const [addToCart, setAddToCart] = useState([])
     const [addToWish, setToWish] = useState([])
 
     const [totalCost, setTotalCost] = useState(0);
-    const allGadgets=gadgetsData
+    const allGadgets = gadgetsData
 
     const handelValue = () => {
         setCartListCount(getAddToCart())
         setWishListCount(getWishList())
-    } 
+    }
 
     const dashboardData = () => {
         const addToCart = getAddToCart();
@@ -41,11 +41,15 @@ export const ContextProvider = ({children}) => {
         setAddToCart(sorted)
     }
 
-    return(
-        <StateContext.Provider value={{cartListCount, wishListCount, handelValue,dashboardData,addToCart,addToWish,totalCost,handelSort}}>
+    return (
+        <StateContext.Provider value={{ cartListCount, wishListCount, handelValue, dashboardData, addToCart, addToWish, totalCost, handelSort }}>
             {children}
         </StateContext.Provider>
     )
+}
+
+StateContext.propTypes = {
+    children: PropTypes.element.isRequired
 }
 
 export default StateContext;
