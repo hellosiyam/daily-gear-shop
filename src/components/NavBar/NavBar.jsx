@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdFavoriteBorder } from "react-icons/md";
 import { useContext } from "react";
@@ -37,7 +37,7 @@ const NavBar = () => {
                         <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
                     </ul>
                 </div>
-                <a className={`btn p-0 btn-ghost text-xl font-bold max-md:text-lg max-md:font-medium ${navColor}`} >Gear Shop</a>
+                <Link to='/'><a className={`btn p-0 btn-ghost text-xl font-bold max-md:text-lg max-md:font-medium ${navColor}`} >Gear Shop</a></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
